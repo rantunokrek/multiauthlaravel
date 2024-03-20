@@ -20,3 +20,5 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+// admin area route('admin.admin_home');
+Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'admindex'])->name('admin.admin_home')->middleware('is_admin');

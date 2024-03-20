@@ -25,4 +25,13 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    //admin area
+    
+   public function admindex()
+    {
+        return view('admin.adminhome');
+    }
+
+
 }
